@@ -28,7 +28,9 @@ const selectCommandBlock = (command) => {
   const lowerCommand = command.toLowerCase();
   switch (lowerCommand) {
     case 'help':
+      return getCommandTemplate(lowerCommand);
     case 'about':
+      return getCommandTemplate(lowerCommand);
     case 'projects':
       return getCommandTemplate(lowerCommand);
     case 'clear':
