@@ -13,6 +13,8 @@ promptInput.addEventListener('keydown', (event) => {
   }
 });
 
+
+
 const enterCommand = (event) => {
   const promptElement = document.getElementById('promptClone').cloneNode(true);
   promptElement.classList.remove('hidden');

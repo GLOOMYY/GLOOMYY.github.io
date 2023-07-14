@@ -12,7 +12,7 @@ body {
   display: grid;
   place-items: center;
   background-color: var(--gray);
-  color: car(--text);
+  color: var(--text);
   font-family: 'Space Mono', monospace;
   font-size: 14px;
   height: 100vh;
