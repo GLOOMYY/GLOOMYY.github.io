@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sebastian's Portfolio</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!--script src="/js/scripts.js"></script-->
-</head>
-<body>
-  <main>  
-    <div class="header"> terminal - Sebastian Mesa Portfolio</div>
-    <div class="terminal" id="terminalWindow">
-      <section id="terminal">
-        <div class="command">Successful Login - <span class="error" id="date"></span></div>
-        <div class="title">Mi Portfolio</div>
-        Hola! ingresa <span class="command">help</span> para ver la lista de comandos
-      </section>
-      <div class="prompt">
-        <span class="command">$</span><span class="title">getUser</span><input id="promptInput">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sebastian's Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--script src="/js/scripts.js"></script-->
+  </head>
+  <body>
+    <main>
+      <div class="header">terminal - Sebastian Mesa Portfolio</div>
+      <div class="terminal" id="terminalWindow">
+        <section id="terminal">
+          <div class="command">
+            Successful Login - <span class="error" id="date"></span>
+          </div>
+          <div class="title">Mi Portfolio</div>
+          Hola! ingresa <span class="command">help</span> para ver la lista de
+          comandos
+        </section>
+        <div class="prompt">
+          <span class="command">$</span><span class="title">getUser</span
+          ><input id="promptInput" />
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span><span class="title">getUser</span>
+      <span class="promptCloneInput"></span>
+      <div class="promptCloneContent"></div>
+    </div>
+
+    <!--Comandos-->
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Lista de comandos:</div>
+      <div class="indent"></div>
+      <div>
+        <span class="command">help</span>
+        <div class="indent">Lista de comandos</div>
+
+        <span class="command">about</span>
+        <div class="indent">Sobre mi</div>
+
+        <span class="command">projects</span>
+        <div class="indent">Mis proyectos</div>
+
+        <span class="command">clear</span>
+        <div class="indent">Limpiar la terminal</div>
       </div>
     </div>
-  </main>
-  <div class="hidden" id="promptClone">
-    <span class="command">$</span><span class="title">getUser</span> <span class="promptCloneInput"></span>
-    <div class="promptCloneContent"></div>
-  </div>
+    <!--Fin Comandos-->
 
-  <!--Comandos-->
-  <div class="hidden" id="help">
-    <div class="sectionTitle">Lista de comandos:</div>
-    <div class="indent"></div>
-    <div>
+    <!--Secciones-->
 
-      <span class="command">help</span>
-      <div class="indent">Lista de comandos</div>
-
-      <span class="command">about</span>
-      <div class="indent">Sobre mi</div>
-
-      <span class="command">projects</span>
-      <div class="indent">Mis proyectos</div>
-
-      <span class="command">clear</span>
-      <div class="indent">Limpiar la terminal</div>
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi</div>
+      <div class="indent">
+        <span class="text"
+          >Soy un estudiante apasianado por el desarrollo y que siempre esta
+          abierto a aprender cosas nuevas y a colarborar en proyectos</span
+        >
+      </div>
     </div>
-  </div>
-  <!--Fin Comandos-->
 
-  <!--Secciones-->
-
-  <div class="hidden" id="about">
-    <div class="sectionTitle">Sobre mi</div>
-    <div class="indent">
-      <span class="text">Soy un estudiante apasianado por el desarrollo y que siempre esta abierto a aprender cosas nuevas y a colarborar en proyectos</span>
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Mis Proyectos:</div>
+      <div class="indent">
+        <span class="title">Esta sección esta en construccíon</span> -
+        <a href="https://gloomyy.github.io/" target="_blank"
+          ><span class="command">Ejemplo</span></a
+        >
+      </div>
     </div>
-  </div>
 
-  <div class="hidden" id="projects">
-    <div class="sectionTitle">Mis Proyectos:</div>
-    <div class="indent">
-      <span class="title">Esta sección esta en construccíon</span> - <a href="https://gloomyy.github.io/" target="_blank"><span class="command">Ejemplo</span></a>
-    </div>
-  </div>
-
-  <!--Fin secciones-->
-  <script src="/js/scripts.js"></script>
-</body>
+    <!--Fin secciones-->
+    <script src="/js/scripts.js"></script>
+  </body>
 </html>
