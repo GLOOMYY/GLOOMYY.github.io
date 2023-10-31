@@ -1,5 +1,9 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Astro Blog';
+// Site Info const
+export const SITE_TITLE = 'Gloomy Portfolio';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+
+
+// Social networks const
+export const GITHUB_LINK = 'https://github.com/GLOOMYY';
+export const MASTODON_LINK = 'https://m.webtoo.ls/@astro';
+export const TWITTER_LINK = 'https://twitter.com/astrodotbuild';

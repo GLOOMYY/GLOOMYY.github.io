@@ -1,0 +1,23 @@
+---
+import { GITHUB_LINK, MASTODON_LINK, TWITTER_LINK } from "../consts";
+import GithubLogo from "../logos/GithubLogo.astro";
+import TwitterLogo from "../logos/TwitterLogo.astro";
+import MastodonLogo from "../logos/MastodonLogo.astro";
+---
+
+<div class="social-links">
+  <a href={GITHUB_LINK} target="_blank">
+    <span class="sr-only">Go to my GitHub repo</span>
+    <GithubLogo />
+  </a>
+
+  <a href={MASTODON_LINK} target="_blank">
+    <span class="sr-only">Follow Astro on Mastodon</span>
+    <MastodonLogo />
+  </a>
+
+  <a href={TWITTER_LINK} target="_blank">
+    <span class="sr-only">Follow Astro on Twitter</span>
+    <TwitterLogo />
+  </a>
+</div>
