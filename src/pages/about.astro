@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/BlogPost.astro";
+import Languages from "../components/Languages.astro";
+import { GITHUB_LINK, LINKEDIN_LINK, MAIL_LINK } from "../consts.ts";
 ---
 
 <Layout
@@ -8,13 +10,7 @@ import Layout from "../layouts/BlogPost.astro";
   pubDate={new Date("November 01 2023")}
   heroImage="/blog-placeholder-about.jpg"
 >
-  <h3>
-    ¡Hi! Soy Sebas <img
-      src="https://github.com/wervlad/wervlad/assets/24524555/766d336d-b87d-44ba-807c-c51de2bc6b4d"
-      width="28px"
-      alt="👋"
-    />
-  </h3>
+  <h3>¡Hi! Soy Sebas 👋</h3>
 
   <h4>Desarrollador FullStack | Estudiante de Ingeniería</h4>
   <img
@@ -25,119 +21,65 @@ import Layout from "../layouts/BlogPost.astro";
   />
 
   <p>
-    Acerca de mí Soy un estudiante de ingeniería de sistemas de la Universidad
-    Nacional de Colombia. Me apasiona el desarrollo y tengo experiencia en
-    programación en JavaScript, Java y Python. Además, estoy familiarizado con
-    frameworks como Django y React.js.
+    Soy un estudiante de ingeniería de sistemas de la Universidad Nacional de
+    Colombia. Me apasiona el desarrollo y tengo experiencia en programación en
+    JavaScript, Java y Python. Además, estoy familiarizado con frameworks como
+    Django y React.js.
   </p>
 
   <div class="badges">
     <img
+      class="badge"
       src="https://img.shields.io/github/followers/GLOOMYY?color=lightgray&label=Followers&logo=GitHub&style=for-the-badge"
       alt="Followers on GitHub"
     />
     <img
+      class="badge"
       src="https://img.shields.io/static/v1?label=Languages&message=Esp/Eng&color=red&style=for-the-badge"
       alt="Languages"
     />
   </div>
 
-  <div>
-    <h3>🔨 Languages and Tools:</h3>
-    <div>
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"
-        title="HTML5"
-        alt="HTML"
-        width="40"
-        height="40"
-      />&nbsp;
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"
-        title="CSS3"
-        alt="CSS"
-        width="40"
-        height="40"
-      />&nbsp;
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"
-        title="JavaScript"
-        alt="JavaScript"
-        width="40"
-        height="40"
-      />&nbsp;
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"
-        title="React"
-        alt="React"
-        width="40"
-        height="40"
-      />&nbsp;
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg"
-        title="Bootstrap"
-        alt="Bootstrap"
-        width="40"
-        height="40"
-      />&nbsp;
-      <!--img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="Sass" alt="Sass" width="40" height="40"/-->&nbsp;
+  <Languages />
 
+  <p>
+    <strong>🌱 Colaboraciones:</strong> Estoy interesado en colaborar en
+    proyectos innovadores e interesantes. Si tienes alguna propuesta o quieres
+    discutir ideas, ¡no dudes en contactarme!
+  </p>
 
-      <!--img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/-->&nbsp;
+  <div class="list">
+    <p class="list-title">📫 <strong>Contacto:</strong></p>
+    <ul>
+      <li>
+        <strong>LinkedIn:</strong>
+        <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
+          Sebastián Mesa</a
+        >
+      </li>
+      <li>
+        <strong>Correo electrónico:</strong>
+        <a href={`mailto:${MAIL_LINK}`}> Mail</a>
+      </li>
+      <li><strong>GitHub:</strong> <a href={GITHUB_LINK}> GLOOMYY</a></li>
+    </ul>
+  </div>
 
-
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"
-        title="Git"
-        **alt="Git"
-        width="40"
-        height="40"
-      />
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg"
-        title="Python"
-        **alt="Python"
-        width="40"
-        height="40"
-      />
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain.svg"
-        title="Django"
-        **alt="Django"
-        **width="40"
-        height="40"
-      />
-      <img
-        src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg"
-        title="Java"
-        **alt="Java"
-        **width="40"
-        height="40"
-      />
-    </div>
+  <div class="list">
+    <p class="list-title">🌐 <strong>Idiomas:</strong></p>
+    <ul>
+      <li><strong>Español:</strong> Nativo</li>
+      <li><strong>Inglés:</strong> Nivel A2-B1</li>
+    </ul>
   </div>
 
   <p>
-    ### 🌱 Colaboraciones Estoy interesado en colaborar en proyectos innovadores
-    e interesantes. Si tienes alguna propuesta o quieres discutir ideas, ¡no
-    dudes en contactarme!
-  </p>
-  <p>
-    ### 📫 Contacto - LinkedIn: <a
-      href="https://www.linkedin.com/in/sebasti%C3%A1n-mesa-460361226/"
-      target="_blank"
-      rel="noopener noreferrer">Sebastián Mesa</a
-    >
-    <a href="mailto:sebas.mesa.montoya@gmail.com">Correo electrónico</a>
-  </p>
-  <p>
-    ### 🌐 Idiomas - Español: Nativo - Inglés: Nivel A2-B1 ### 🎯 Intereses y
-    pasatiempos Cuando no estoy programando, me gusta explorar nuevas
-    tecnologías y aprender sobre las últimas tendencias en desarrollo. También
-    disfruto leer libros relacionados con la tecnología y los negocios, así como
-    participar en actividades al aire libre. ¡Gracias por visitar mi perfil de
-    GitHub! Espero que encuentres interesantes mis proyectos y que podamos
-    colaborar
+    <strong>🎯 Intereses y pasatiempos:</strong> Cuando no estoy programando, me
+    gusta explorar nuevas tecnologías y aprender sobre las últimas tendencias en
+    desarrollo. También disfruto leer libros relacionados con la tecnología y
+    los negocios, así como participar en actividades al aire libre. ¡Gracias por
+    visitar mi perfil de GitHub! Espero que encuentres interesantes mis
+    proyectos y que podamos colaborar
   </p>
 </Layout>
 
@@ -151,6 +93,28 @@ import Layout from "../layouts/BlogPost.astro";
     padding-bottom: 1rem;
   }
   .badges {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .badge {
+    padding: 0rem 1rem 3rem 1rem;
+  }
+
+  .list {
+    margin-bottom: 3rem;
+  }
+  .list-title {
+    margin-bottom: 0rem;
+  }
+  ul {
+    list-style: circle;
+  }
+  a {
+    text-decoration: solid;
+  }
+
+  a:hover {
+    border-bottom: 1px solid;
+    background: #cdfeaa;
   }
 </style>
