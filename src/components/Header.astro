@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import ThemeIcon from "./ThemeIcon.astro";
+// import ThemeIcon from "./ThemeIcon.astro";
 import { SITE_TITLE } from "../consts";
 import { GITHUB_LINK, MASTODON_LINK, TWITTER_LINK } from "../consts";
 import GithubLogo from "./logos/GithubLogo.astro";
@@ -16,6 +16,7 @@ import MastodonLogo from "./logos/MastodonLogo.astro";
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/projects">Projects</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
     </div>
     <div class="social-links">
@@ -33,7 +34,7 @@ import MastodonLogo from "./logos/MastodonLogo.astro";
         <span class="sr-only">Follow Astro on Mastodon</span>
         <MastodonLogo />
       </a>
-      <ThemeIcon />
+      <!-- <ThemeIcon /> -->
     </div>
     <style>
       header {
