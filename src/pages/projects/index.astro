@@ -9,8 +9,8 @@ import FormattedDate from "../../components/FormattedDate.astro";
 const projects = (await getCollection("projects")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
-console.log(projects[0].data.pubDate.valueOf());
-console.log(projects[0].data.pubDate);
+
+
 ---
 
 <!doctype html>
