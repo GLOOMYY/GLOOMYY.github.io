@@ -21,13 +21,23 @@ export default function Home() {
       <div className="relative z-0">
         <Header />
         <main className="pt-16">
-          <HomeSection />
-          <ProjectsSection />
-          <DataAISection />
-          <SkillsSection />
-          <ScrollReveal>
-            <Contact />
-          </ScrollReveal>
+          <section id="home">
+            <HomeSection />
+          </section>
+          <section id="projects">
+            <ProjectsSection />
+          </section>
+          <section id="data-ai">
+            <DataAISection />
+          </section>
+          <section id="skills">
+            <SkillsSection />
+          </section>
+          <section id="contact">
+            <ScrollReveal>
+              <Contact />
+            </ScrollReveal>
+          </section>
         </main>
         <Footer />
       </div>

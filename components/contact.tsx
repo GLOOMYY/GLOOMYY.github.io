@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Briefcase, Mail, User, Github, Linkedin, Instagram,MapPin, Phone, Send, Loader2 } from "lucide-react"
-import Image from "next/image"
+import { Briefcase, Mail, User, Github, Linkedin, Instagram, MapPin, Phone, Send, Loader2 } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
@@ -33,8 +32,8 @@ export default function Contact() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
     try {
-      // Here you would typically send the form data to your backend
-      await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate API call
+      // Aquí normalmente enviarías los datos del formulario a tu backend
+      await new Promise((resolve) => setTimeout(resolve, 1000)) // Simular llamada a API
       setSubmitSuccess(true)
       reset()
       setTimeout(() => setSubmitSuccess(false), 3000)
@@ -46,94 +45,104 @@ export default function Contact() {
   }
 
   return (
-      <section id="contact" className="py-20">
+    <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div>
           <h2 className="text-3xl font-bold mb-10 text-center">&gt; Contact_Me</h2>
         </div>
 
-        <div>
-          <section
-            id="contact"
-            className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-900 transition-colors duration-300 overflow-hidden relative"
+        <div className="flex flex-col lg:flex-row gap-12">
+          <motion.div
+            className="lg:w-1/2 bg-black/80 backdrop-blur-sm border border-blue-400 rounded-lg p-8 shadow-lg"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
           >
-            
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="flex flex-col lg:flex-row gap-12">
-                <motion.div
-                  className="lg:w-1/3 bg-black/80 backdrop-blur-sm border border-blue-400 rounded-lg p-8 shadow-lg"
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
-                    <h3 className="text-2xl font-semibold mb-6 dark:text-white">Contact Information</h3>
-                    <div className="space-y-6">
-                      <a
-                        href="mailto:musmanzafar53@gmail.com"
-                        className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                      >
-                        <Mail className="w-6 h-6 mr-3 text-blue-600" />
-                        musmanzafar53@gmail.com
-                      </a>
-                      <a
-                        href="tel:+923055356766"
-                        className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                      >
-                        <Phone className="w-6 h-6 mr-3 text-blue-600" />
-                        +92-305-5356766
-                      </a>
-                      <div className="flex items-center text-gray-600 dark:text-gray-300">
-                        <MapPin className="w-6 h-6 mr-3 text-blue-600" />
-                        Lahore, Pakistan
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-
+            <h3 className="text-2xl font-semibold mb-6 text-blue-400">Contact Information</h3>
+            <div className="space-y-6">
+              <a
+                href="mailto:sebas.mesa.montoya@gmail.com"
+                className="flex items-center text-blue-400 hover:text-blue-200 transition-colors duration-300"
+              >
+                <Mail className="w-6 h-6 mr-3 text-blue-600" />
+                sebas.mesa.montoya@gmail.com
+              </a>
+              <a
+                href="tel:+923055356766"
+                className="flex items-center text-blue-400 hover:text-blue-200 transition-colors duration-300"
+              >
+                <Phone className="w-6 h-6 mr-3 text-blue-600" />
+                +57 305 343 8319
+              </a>
+              <div className="flex items-center text-blue-400">
+                <MapPin className="w-6 h-6 mr-3 text-blue-600" />
+                Medellin, Colombia
               </div>
             </div>
-          </section>
-        </div>
+          </motion.div>
 
-        <div>
-          <div className="max-w-md mx-auto bg-black/80 backdrop-blur-sm p-8 rounded-lg border border-blue-400">
-            <div className="flex items-center justify-center space-x-6 mb-6">
-              <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
-                <User className="w-8 h-8" />
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
-                <Briefcase className="w-8 h-8" />
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
-                <Mail className="w-8 h-8" />
-              </a>
+          <div className="lg:w-1/2">
+            <div className="bg-black/80 backdrop-blur-sm p-8 rounded-lg border border-blue-400">
+              <div className="flex items-center justify-center space-x-6 mb-6">
+                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                  <User className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                  <Briefcase className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                  <Mail className="w-8 h-8" />
+                </a>
+              </div>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="mb-4">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    {...register("name")}
+                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                  />
+                  {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+                </div>
+                <div className="mb-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    {...register("email")}
+                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                  />
+                  {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+                </div>
+                <div className="mb-4">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    {...register("subject")}
+                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                  />
+                  {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
+                </div>
+                <div className="mb-4">
+                  <textarea
+                    placeholder="Message"
+                    rows={4}
+                    {...register("message")}
+                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                  ></textarea>
+                  {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : <Send className="mr-2" />}
+                  &gt; Send_Message
+                </button>
+                {submitSuccess && <p className="text-green-500 text-sm mt-4">Message sent successfully!</p>}
+              </form>
             </div>
-
-            <form>
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full mb-4 p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full mb-4 p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
-              />
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className="w-full mb-4 p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded transition-colors"
-              >
-                &gt; Send_Message
-              </button>
-            </form>
           </div>
         </div>
       </div>
