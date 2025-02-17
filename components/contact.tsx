@@ -53,7 +53,7 @@ export default function Contact() {
 
         <div className="flex flex-col lg:flex-row gap-12">
           <motion.div
-            className="lg:w-1/2 bg-black/80 backdrop-blur-sm border border-blue-400 rounded-lg p-8 shadow-lg"
+            className="lg:w-1/2 bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-gray-200 dark:border-blue-400 rounded-lg p-8 shadow-lg"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -63,35 +63,35 @@ export default function Contact() {
             <div className="space-y-6">
               <a
                 href="mailto:sebas.mesa.montoya@gmail.com"
-                className="flex items-center text-blue-400 hover:text-blue-200 transition-colors duration-300"
+                className="flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors duration-300"
               >
-                <Mail className="w-6 h-6 mr-3 text-blue-600" />
+                <Mail className="w-6 h-6 mr-3" />
                 sebas.mesa.montoya@gmail.com
               </a>
               <a
                 href="tel:+923055356766"
-                className="flex items-center text-blue-400 hover:text-blue-200 transition-colors duration-300"
+                className="flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors duration-300"
               >
-                <Phone className="w-6 h-6 mr-3 text-blue-600" />
+                <Phone className="w-6 h-6 mr-3" />
                 +57 305 343 8319
               </a>
-              <div className="flex items-center text-blue-400">
-                <MapPin className="w-6 h-6 mr-3 text-blue-600" />
+              <div className="flex items-center text-blue-600 dark:text-blue-400">
+                <MapPin className="w-6 h-6 mr-3" />
                 Medellin, Colombia
               </div>
             </div>
           </motion.div>
 
           <div className="lg:w-1/2">
-            <div className="bg-black/80 backdrop-blur-sm p-8 rounded-lg border border-blue-400">
+            <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-8 rounded-lg border border-gray-200 dark:border-blue-400">
               <div className="flex items-center justify-center space-x-6 mb-6">
-                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors">
                   <User className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors">
                   <Briefcase className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-blue-400 hover:text-blue-200 transition-colors">
+                <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors">
                   <Mail className="w-8 h-8" />
                 </a>
               </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                     type="text"
                     placeholder="Name"
                     {...register("name")}
-                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                    className="w-full p-2 bg-white dark:bg-black/50 border border-gray-300 dark:border-blue-400 rounded text-gray-800 dark:text-blue-400 placeholder-gray-500 dark:placeholder-blue-600"
                   />
                   {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                 </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                     type="email"
                     placeholder="Email"
                     {...register("email")}
-                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                    className="w-full p-2 bg-white dark:bg-black/50 border border-gray-300 dark:border-blue-400 rounded text-gray-800 dark:text-blue-400 placeholder-gray-500 dark:placeholder-blue-600"
                   />
                   {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
@@ -119,7 +119,7 @@ export default function Contact() {
                     type="text"
                     placeholder="Subject"
                     {...register("subject")}
-                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                    className="w-full p-2 bg-white dark:bg-black/50 border border-gray-300 dark:border-blue-400 rounded text-gray-800 dark:text-blue-400 placeholder-gray-500 dark:placeholder-blue-600"
                   />
                   {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
                 </div>
@@ -128,13 +128,13 @@ export default function Contact() {
                     placeholder="Message"
                     rows={4}
                     {...register("message")}
-                    className="w-full p-2 bg-black/50 border border-blue-400 rounded text-blue-400 placeholder-blue-600"
+                    className="w-full p-2 bg-white dark:bg-black/50 border border-gray-300 dark:border-blue-400 rounded text-gray-800 dark:text-blue-400 placeholder-gray-500 dark:placeholder-blue-600"
                   ></textarea>
                   {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded transition-colors flex items-center justify-center"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white dark:text-black font-bold py-2 px-4 rounded transition-colors flex items-center justify-center"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : <Send className="mr-2" />}

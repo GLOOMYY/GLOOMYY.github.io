@@ -2,7 +2,11 @@
 
 import { useEffect, useRef } from "react"
 
-export default function MatrixRain() {
+interface MatrixRainProps {
+  theme: "light" | "dark"
+}
+
+export default function MatrixRain({ theme }: MatrixRainProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -34,12 +38,12 @@ export default function MatrixRain() {
 
     // Drawing function
     function draw() {
-      // Black BG with opacity for fade effect
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)"
+      // Black or white BG with opacity for fade effect
+      ctx.fillStyle = theme === "dark" ? "rgba(0, 0, 0, 0.05)" : "rgba(255, 255, 255, 0.05)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      // Blue text
-      ctx.fillStyle = "#60A5FA" // Tailwind blue-400
+      // Blue text for both themes
+      ctx.fillStyle = theme === "dark" ? "#60A5FA" : "#2563EB" // Tailwind blue-400 for dark, blue-600 for light
       ctx.font = `${fontSize}px "VT323"`
 
       // Loop through drops
@@ -65,7 +69,7 @@ export default function MatrixRain() {
       clearInterval(interval)
       window.removeEventListener("resize", resizeCanvas)
     }
-  }, [])
+  }, [theme]) // Add theme as a dependency
 
   return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full -z-10" />
 }
