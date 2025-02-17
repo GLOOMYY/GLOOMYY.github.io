@@ -1,9 +1,7 @@
 "use client"
 
-import Image from "next/image"
-import { Github, Linkedin, Instagram } from "lucide-react"
-import MatrixRain from "@/components/matrix-rain"
 import CustomCursor from "@/components/custom-cursor"
+import MatrixRain from "@/components/matrix-rain"
 import ScrollReveal from "@/components/scroll-reveal"
 import Contact from "@/components/contact"
 import Header from "@/components/header"

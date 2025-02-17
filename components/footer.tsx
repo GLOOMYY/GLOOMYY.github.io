@@ -1,10 +1,9 @@
 import { Github, Linkedin, Instagram } from "lucide-react"
-import ScrollReveal from "@/components/scroll-reveal"
 
 export default function Footer() {
   return (
     <footer className="bg-black/90 text-center py-12 border-t border-blue-400">
-      <ScrollReveal>
+      <div>
         <div className="flex justify-center items-center space-x-8">
           <a
             href="https://github.com/GLOOMYY"
@@ -32,7 +31,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-6">&gt; © 2025 GLOOMYY All_rights_reserved.</p>
-      </ScrollReveal>
+      </div>
     </footer>
   )
 }
