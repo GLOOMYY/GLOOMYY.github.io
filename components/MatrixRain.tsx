@@ -25,7 +25,17 @@ export default function MatrixRain({ theme }: MatrixRainProps) {
     window.addEventListener("resize", resizeCanvas)
 
     // Matrix rain characters
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*"
+    const chars =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" + // Letras latinas
+      "0123456789@#$%^&*" + // Números y símbolos básicos
+      "囧囱卄㊎㊋㊌㊏" + // Caracteres asiáticos y "Matrix-style"
+      "∡∢∤∥∦∧∨⊕⊗⊘⊥⌈⌉⌊⌋∂∇ℵ∬∭∮" + // Símbolos matemáticos
+      "⫍⫎⫏⫐⫑⫒⫓⫔⫕⨀⨁⨂⨆⨌" + // Símbolos de computación
+      "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ" + // Letras griegas
+      "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" + // Letras rusas
+      "א ב ג ד ה ו ז ח ט י ك ل م ن ס ע פ צ ق ר ש ת" + // Hebreo y árabe
+      "अ आ इ ई उ ऊ ऋ" + // Sánscrito
+      "亜兇兎兜冗凡凶凸凹刃刈刊刎刑刖列劣勃勇匁卜卩" // Más caracteres asiáticos
     const charArray = chars.split("")
     const fontSize = 14
     const columns = canvas.width / fontSize
