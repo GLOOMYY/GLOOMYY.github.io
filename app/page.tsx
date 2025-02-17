@@ -14,6 +14,8 @@ import SkillsSection from "@/components/skills-section"
 import ExperienceSection from "@/components/experience-section"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import EducationSection from "@/components/education-section"
+import ServicesSection from "@/components/services-section"
 
 export default function Home() {
   const [theme, setTheme] = useState("dark")
@@ -49,6 +51,12 @@ export default function Home() {
           </section>
           <section id="experience">
             <ExperienceSection />
+          </section>
+          <section id="education">
+            <EducationSection />
+          </section>
+          <section id="services">
+            <ServicesSection />
           </section>
           <section id="skills">
             <SkillsSection />
