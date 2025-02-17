@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function DataAISection() {
   return (

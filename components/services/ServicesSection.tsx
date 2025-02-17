@@ -1,4 +1,4 @@
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function ServicesSection() {
   return (

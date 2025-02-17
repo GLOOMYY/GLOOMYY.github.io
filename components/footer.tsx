@@ -1,5 +1,5 @@
 import { Github, Linkedin, Instagram } from "lucide-react"
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function Footer() {
   return (

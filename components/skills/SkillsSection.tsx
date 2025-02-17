@@ -3,7 +3,7 @@ import { SiTypescript, SiPandas, SiTensorflow, SiScikitlearn, SiPostgresql, SiMo
 import { TbBrandNextjs } from "react-icons/tb"
 import { BsDatabase } from "react-icons/bs"
 import { AiOutlineConsoleSql } from "react-icons/ai"
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function SkillsSection() {
   const skills = [

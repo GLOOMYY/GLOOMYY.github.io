@@ -1,7 +1,7 @@
 import { FaReact, FaNodeJs, FaPython, FaAws } from "react-icons/fa"
 import { SiTensorflow, SiScikitlearn } from "react-icons/si"
 import { AiOutlineConsoleSql } from "react-icons/ai"
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/ScrollReveal"
 
 export default function ExperienceSection() {
   return (
