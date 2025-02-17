@@ -1,3 +1,4 @@
+import Card from "@/components/Card"
 import ScrollReveal from "@/components/ScrollReveal"
 
 interface ExperienceProps {
@@ -13,7 +14,7 @@ interface ExperienceProps {
 
 const ExperienceCard = ({ job, index }: ExperienceProps) => (
   <ScrollReveal delay={index * 0.2}>
-    <article className="bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-gray-200 dark:border-blue-400 rounded-lg p-6 transition-transform hover:scale-105">
+    <Card>
       <h3 className="text-xl font-semibold mb-2">&gt; {job.title}</h3>
       <p className="text-gray-600 dark:text-blue-300 mb-2">
         {job.company} | {job.period}
@@ -24,7 +25,7 @@ const ExperienceCard = ({ job, index }: ExperienceProps) => (
           <span key={i}>{tech}</span>
         ))}
       </div>
-    </article>
+    </Card>
   </ScrollReveal>
 )
 
