@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center">
       <ScrollReveal>
-        <div className="text-center bg-black/50 p-8 rounded-lg backdrop-blur-sm">
+        <div className="text-center bg-black/10 p-8 rounded-lg backdrop-blur-sm">
           <div className="mb-6 relative w-40 h-40 mx-auto">
             <Image
               src="/placeholder.svg?height=160&width=160"
