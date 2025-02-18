@@ -2,19 +2,73 @@ import EducationCard from "@/components/education/EducationCard"
 import CourseCard from "@/components/education/CourseCard"
 import ScrollReveal from "@/components/ScrollReveal"
 
+// Formal Education
 const educationData = [
   {
-    title: "Bachelor of Science in Computer Science",
-    institution: "National University",
-    period: "2015 - 2019",
-    description: "Focused on software development, algorithms, and data structures.",
+    title: "Systems and Informatics Engineering",
+    institution: "National University of Colombia",
+    period: "2022 - Present",
+    description: "Focused on software engineering, AI, machine learning, and software development.",
   },
 ]
 
+// Certified Courses & Bootcamps
 const coursesData = [
-  { id: 1, title: "Course 1", description: "Skills acquired and details.", link: "#" },
-  { id: 2, title: "Course 2", description: "Skills acquired and details.", link: "#" },
-  { id: 3, title: "Course 3", description: "Skills acquired and details.", link: "#" },
+  {
+    id: 1,
+    title: "Python-Django Level 1, 2 & 3",
+    description: "Comprehensive backend development training, including databases and API design.",
+    institution: "Sapiencia & ITM",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Advanced Artificial Intelligence",
+    description: "Specialized diploma focused on AI applications in real-world business challenges.",
+    institution: "Institución Universitaria Esumer & Medellín Mayor’s Office",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "IT Specialist - Python (International Certification)",
+    description: [
+      "Recognized certification validating skills in Python programming, debugging, and problem-solving.",
+      "Issued by Certiport in collaboration with Pearson.",
+    ],
+    institution: "Certiport & Pearson",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Macroentrenamiento en Inteligencia Artificial (MeIA) 2023",
+    description: [
+      "Virtual workshop on Artificial Intelligence, conducted from June 12 to June 30, 2023.",
+      "Achieved **2nd place** in the AI challenge, competing with teams across Latin America.",
+    ],
+    institution: "Universidad Nacional Autónoma de México (UNAM) & Red de Macro Universidades de América Latina y el Caribe",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "WWC AI Bootcamp",
+    description: "Intensive training on AI fundamentals and real-world implementation.",
+    institution: "WWC (Women Who Code)",
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "Soft Skills Certification",
+    description: "Enhanced leadership, teamwork, and problem-solving skills.",
+    institution: "Certified by Official Program",
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "English Language Certification",
+    description: "Advanced English proficiency certification.",
+    institution: "Certified by Official Program",
+    link: "#",
+  },
 ]
 
 export default function EducationSection() {

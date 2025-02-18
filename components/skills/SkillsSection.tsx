@@ -4,7 +4,7 @@ import { TbBrandNextjs } from "react-icons/tb"
 import { BsDatabase } from "react-icons/bs"
 import { AiOutlineConsoleSql } from "react-icons/ai"
 import ScrollReveal from "@/components/ScrollReveal"
-import SkillCard from "./SkillCard"
+import SkillCard from "@/components/skills/SkillCard"
 
 // Datos de habilidades
 const skillsData = [

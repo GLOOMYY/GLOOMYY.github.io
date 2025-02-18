@@ -10,10 +10,13 @@ export default function HomeSection() {
           <ProfileImage src="/placeholder.svg?height=160&width=160" alt="Profile picture of GLOOMYY" />
           <BioText
             name="GLOOMYY"
-            roles="Full_Stack_Dev | Data_Analyst | AI_Enthusiast"
-            description="&gt; Passionate about creating beautiful web applications, deriving insights from data, and leveraging
-            AI to solve complex problems. Specializing in React, Node.js, Python for data analysis, and machine
-            learning."
+            roles="Full-Stack Dev | AI Engineer | Cloud Architect"
+            description={[
+              "If you can imagine it, you can code it.",
+              "Fluid interfaces, efficient code, and scalable solutions.",
+              "More than solving problems, we create solutions.",
+              "Simplicity is engineering at its finest."
+            ]}
           />
         </div>
       </ScrollReveal>
