@@ -4,17 +4,6 @@ import ServiceCard from "./ServiceCard"
 // Service Data
 const servicesData = [
   {
-    title: "Full-Stack Web Development",
-    description: [
-      "Building static and dynamic websites with or without database connectivity.",
-      "Real-time applications for monitoring, chat, and interactive dashboards.",
-      "Development of secure cloud-hosted websites and CMS-integrated blogs.",
-      "Creation of scalable architectures such as microservices and microfrontends.",
-      "E-commerce solutions tailored for businesses of all sizes.",
-      "🔹 **Always open to new challenges!**",
-    ],
-  },
-  {
     title: "Data Analysis & AI Solutions",
     description: [
       "Exploratory, predictive, and real-time data analysis to extract valuable insights.",
@@ -32,6 +21,18 @@ const servicesData = [
       "🔹 **Scalability and reliability at every step!**",
     ],
   },
+  {
+    title: "Full-Stack Web Development",
+    description: [
+      "Building static and dynamic websites with or without database connectivity.",
+      "Real-time applications for monitoring, chat, and interactive dashboards.",
+      "Development of secure cloud-hosted websites and CMS-integrated blogs.",
+      "Creation of scalable architectures such as microservices and microfrontends.",
+      "E-commerce solutions tailored for businesses of all sizes.",
+      "🔹 **Always open to new challenges!**",
+    ],
+  },
+
   {
     title: "Technology Consulting & Mentorship",
     description: [
