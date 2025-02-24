@@ -16,6 +16,7 @@ import Contact from "@/components/contact/Contact"
 import Footer from "@/components/footer/Footer"
 import EducationSection from "@/components/education/EducationSection"
 import ServicesSection from "@/components/services/ServicesSection"
+import Youtube from "@/components/content/Youtube"
 
 export default function Home() {
   const [theme, setTheme] = useState("dark")
@@ -60,6 +61,9 @@ export default function Home() {
           </section>
           <section id="skills">
             <SkillsSection />
+          </section>
+          <section id="skills">
+            <Youtube />
           </section>
           <section id="contact">
             <ScrollReveal>
