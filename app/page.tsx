@@ -44,14 +44,14 @@ export default function Home() {
           <section id="home">
             <HomeSection />
           </section>
-          <section id="projects">
-            <ProjectsSection />
-          </section>
-          <section id="data-ai">
-            <DataAISection />
-          </section>
           <section id="experience">
             <ExperienceSection />
+          </section>
+          <section id="projects">
+            <ProjectsSection />
+          {/* </section>
+          <section id="data-ai"> */}
+            <DataAISection />
           </section>
           <section id="education">
             <EducationSection />
@@ -62,7 +62,7 @@ export default function Home() {
           <section id="skills">
             <SkillsSection />
           </section>
-          <section id="skills">
+          <section id="content">
             <Youtube />
           </section>
           <section id="contact">
