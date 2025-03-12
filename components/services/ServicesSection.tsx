@@ -9,7 +9,7 @@ const servicesData = [
       "Exploratory, predictive, and real-time data analysis to extract valuable insights.",
       "AI-powered chatbots, assistants, and content generation.",
       "Clustering, forecasting, and NLP-focused AI solutions.",
-      "🔹 **No matter the data complexity, we find the value in it!**",
+      "No matter the data complexity, we find the value in it!",
     ],
   },
   {
@@ -18,7 +18,7 @@ const servicesData = [
       "Cloud hosting for web applications and AI models.",
       "Efficient infrastructure setup for microservices and real-time applications.",
       "Seamless deployment of APIs and AI-powered services.",
-      "🔹 **Scalability and reliability at every step!**",
+      "Scalability and reliability at every step!",
     ],
   },
   {
@@ -29,7 +29,7 @@ const servicesData = [
       "Development of secure cloud-hosted websites and CMS-integrated blogs.",
       "Creation of scalable architectures such as microservices and microfrontends.",
       "E-commerce solutions tailored for businesses of all sizes.",
-      "🔹 **Always open to new challenges!**",
+      "Always open to new challenges!",
     ],
   },
 
@@ -39,7 +39,7 @@ const servicesData = [
       "Guidance for startups, businesses, and individuals on best practices in software development.",
       "One-on-one mentorship and tailored workshops for technical skill development.",
       "Automation services to optimize workflows and eliminate inefficiencies.",
-      "🔹 **Helping you bridge the gap between ideas and execution!**",
+      "Helping you bridge the gap between ideas and execution!",
     ],
   },
 ]

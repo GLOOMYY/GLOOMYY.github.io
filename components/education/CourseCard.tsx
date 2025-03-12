@@ -16,9 +16,9 @@ const CourseCard = ({ course, index }: CourseProps) => (
     <Card>
       <h3 className="text-xl font-semibold mb-2">&gt; {course.title}</h3>
       <p className="text-gray-600 dark:text-blue-300 mb-4">{course.description}</p>
-      <a href={course.link} className="text-blue-600 dark:text-blue-200 hover:underline">
+      {/* <a href={course.link} className="text-blue-600 dark:text-blue-200 hover:underline">
         &gt; View Course
-      </a>
+      </a> */}
     </Card>
   </ScrollReveal>
 )
