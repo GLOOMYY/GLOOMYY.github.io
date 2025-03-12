@@ -4,12 +4,14 @@ import ThemeToggle from "@/components/header/ThemeToggle"
 
 const menuItems = [
   { label: "Home", href: "#home" },
-  { label: "Web_Projects", href: "#projects" },
-  { label: "Data_&_AI", href: "#data-ai" },
+  // { label: "Web_Projects", href: "#projects" },
+  // { label: "Data_&_AI", href: "#data-ai" },
   { label: "Experience", href: "#experience" },
+  // { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Services", href: "#services" },
   { label: "Skills", href: "#skills" },
+  // { label: "Content", href: "#content"},
   { label: "Contact", href: "#contact" },
 ]
 

@@ -1,8 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Briefcase, Mail, User, Github, Linkedin, Instagram, Moon, Sun } from "lucide-react"
 import MatrixRain from "@/components/MatrixRain"
 import ScrollReveal from "@/components/ScrollReveal"
 import CustomCursor from "@/components/CustomCursor"
@@ -16,6 +14,7 @@ import Contact from "@/components/contact/Contact"
 import Footer from "@/components/footer/Footer"
 import EducationSection from "@/components/education/EducationSection"
 import ServicesSection from "@/components/services/ServicesSection"
+import Youtube from "@/components/content/Youtube"
 
 export default function Home() {
   const [theme, setTheme] = useState("dark")
@@ -43,15 +42,13 @@ export default function Home() {
           <section id="home">
             <HomeSection />
           </section>
-          <section id="projects">
-            <ProjectsSection />
-          </section>
-          <section id="data-ai">
-            <DataAISection />
-          </section>
           <section id="experience">
             <ExperienceSection />
           </section>
+          {/* <section id="projects">
+            <ProjectsSection />
+            <DataAISection />
+          </section> */}
           <section id="education">
             <EducationSection />
           </section>
@@ -61,6 +58,9 @@ export default function Home() {
           <section id="skills">
             <SkillsSection />
           </section>
+          {/* <section id="content">
+            <Youtube />
+          </section> */}
           <section id="contact">
             <ScrollReveal>
               <Contact />
