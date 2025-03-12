@@ -45,10 +45,10 @@ export default function Home() {
           <section id="experience">
             <ExperienceSection />
           </section>
-          <section id="projects">
+          {/* <section id="projects">
             <ProjectsSection />
             <DataAISection />
-          </section>
+          </section> */}
           <section id="education">
             <EducationSection />
           </section>
