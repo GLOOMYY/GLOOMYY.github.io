@@ -1,8 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Briefcase, Mail, User, Github, Linkedin, Instagram, Moon, Sun } from "lucide-react"
 import MatrixRain from "@/components/MatrixRain"
 import ScrollReveal from "@/components/ScrollReveal"
 import CustomCursor from "@/components/CustomCursor"
@@ -49,8 +47,6 @@ export default function Home() {
           </section>
           <section id="projects">
             <ProjectsSection />
-          {/* </section>
-          <section id="data-ai"> */}
             <DataAISection />
           </section>
           <section id="education">
@@ -62,9 +58,9 @@ export default function Home() {
           <section id="skills">
             <SkillsSection />
           </section>
-          <section id="content">
+          {/* <section id="content">
             <Youtube />
-          </section>
+          </section> */}
           <section id="contact">
             <ScrollReveal>
               <Contact />
